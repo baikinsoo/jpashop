@@ -11,6 +11,10 @@ import java.util.List;
 @Getter @Setter
 public class Member {
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+
     @Id @GeneratedValue
     @Column(name = "member_id")
     private Long id;
