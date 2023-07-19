@@ -28,7 +28,6 @@ public class MemberRepository {
     }
 
     public List<Member> findAll() {
-
         return em.createQuery("select m from Member m", Member.class)
                 .getResultList();
         // createQuery를 사용하여 첫번째 파라미터에는 jpql을 두번째 파라미터에는 반환값을 넣고, getResultList()로 결과값을 List로 받는다.
