@@ -66,8 +66,7 @@ public class InitDb {
             em.persist(order);
         }
 
-        private Member createMember(String name, String city, String street,
-                                    String zipcode) {
+        private Member createMember(String name, String city, String street, String zipcode) {
             Member member = new Member();
             member.setName(name);
             member.setAddress(new Address(city, street, zipcode));
